@@ -1,0 +1,25 @@
+<%- include("partials/header"); -%>
+<div>
+  <h1>Compose</h1>
+  <form class="" action="/compose" method="post">
+    <div class="padding col-sm-6">
+      <input type="text" class="form-control" placeholder="First name" name="firstName" required>
+    </div>
+    <div class="padding col-sm-6">
+      <input type="text" class="form-control" placeholder="Last name" name="lastName" required>
+    </div>
+
+    <label>Topic</label>
+    <input class="form-control" type="text" name="topic" placeholder="Culture, Science?" required>
+    <label>Title</label>
+    <input class="form-control" type="text" name="postTitle" required>
+    <label>Post</label>
+    <textarea class="form-control" name="postBody" rows="5" cols="30" required></textarea>
+
+    <button class="btn btn-primary" type="submit" name="button">Publish</button>
+
+  </form>
+</div>
+
+
+<%- include("partials/footer"); -%>
